@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dribble</title>
+    <link rel="stylesheet" href="css/foryou.css">
+    <script src="
+https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href ="css/swiper-bundle.min.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="icon"><a href="/index.html">Dribble</a></div>
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+       
+        <ol>
+            <li><a href="/foryou.html">For you</a></li>
+            <li><a href="/index.html">Inpiration</a></li>
+            <li><a href="/foryou.html">Learn Design</a></li>
+            <li><a href="/jobs.html">Jobs</a></li>
+            <li><a href="/login.html">Log in/Sign up</a></li>
+            
+        </ol>
+        
+    </nav>
+    <section class ="h-txt">
+       
+        <h1>Discover the world's top designers and creatives</h1>
+        <h5>Dribble is the leading destination to find & showcase creative work and home to world's best design professinals</h5>
+        <br>
+    
+    </section>
+</header>
+<section class="filter">
+    <div class="container">
+        <div class="filter_buttons">
+        <button class="active" data-name="all">All</button>
+        <button data-name="Animations">Animations</button>
+        <button data-name="Branding">Branding</button>
+        <button data-name="Illustrations">Illustrations</button>
+        <button data-name="Mobile">Mobile</button>
+        <button data-name="Typography">Typography</button>
+        <button data-name="Webdesign">Webdesign</button>
+        
+
+    </div>
+    <div class="filter_options">
+        <label for="filterSelect" class="text">Filter by:</label>
+        <select id="filterSelect" class="dropdown">
+          <option value="popularity">Popularity</option>
+          <option value="new">New</option>
+          <option value="netWorthy">Net Worthy</option>
+        </select>
+      </div>
+    <div class="filtercards">
+        <div class="card" data-name="Animations">
+            <img src="img/ui1.jpg" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Zentangle Animation</h6>
+                <div class="btns">
+                    <button onclick="Toggle1()" id="btn1" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 1.8k</span>
+                </div>
+               
+            </div>
+            
+            
+        </div>
+        <div class="card" data-name="Mobile">
+            <img src="img/ui4.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">UI Mobile design</h6>
+                <div class="btns">
+                    <button onclick="Toggle2()" id="btn2" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 5k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Branding">
+            <img src="img/ui2.jpg" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Student Branding</h6>
+                <div class="btns">
+                    <button onclick="Toggle3()" id="btn3" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 100k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Illustrations" data-name="popular">
+            <img src="img/ui3.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">UI Illustrations</h6>
+                <div class="btns">
+                    <button onclick="Toggle4()" id="btn4" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 45k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Webdesign" data-name="new">
+            <img src="img/ui 5.jpg" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Career Webdesign</h6>
+                <div class="btns">
+                    <button onclick="Toggle5()" id="btn5" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 1k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Illustrations">
+            <img src="img/illus.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">User Illustrations</h6>
+                <div class="btns">
+                    <button onclick="Toggle6()" id="btn6" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 7k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Typography">
+            <img src="img/typo1.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Web Typography</h6>
+                <div class="btns">
+                    <button onclick="Toggle7()" id="btn7" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i>56k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Animations">
+            <img src="img/img8.gif" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Car UI Animation</h6>
+                <div class="btns">
+                    <button onclick="Toggle8()" id="btn8" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 78k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Typography">
+            <img src="img/typo2.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Heading Typography</h6>
+                <div class="btns">
+                    <button onclick="Toggle9()" id="btn9" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 5.6k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Branding">
+            <img src="img/brand.jpg" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Company Branding</h6>
+                <div class="btns">
+                    <button onclick="Toggle10()" id="btn10" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 67.8k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Webdesign">
+            <img src="img/ui6.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Education Webdesign</h6>
+                <div class="btns">
+                    <button onclick="Toggle11()" id="btn11" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 18k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Branding">
+            <img src="img/ui7.jpg" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Anime Branding</h6>
+                <div class="btns">
+                    <button onclick="Toggle12()" id="btn12" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 100k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Mobile">
+            <img src="img/mob.png" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">UI Mobile design</h6>
+                <div class="btns">
+                    <button onclick="Toggle13()" id="btn13" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 108k</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-name="Typography">
+            <img src="img/typo3.webp" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Letter Typography</h6>
+                <div class="btns">
+                    <button onclick="Toggle14()" id="btn14" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 90k</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-name="Animations">
+            <img src="img/img9.gif" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Stunning Animation</h6>
+                <div class="btns">
+                    <button onclick="Toggle15()" id="btn15" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 48k</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-name="Mobile">
+            <img src="img/img10.gif" alt=""/>
+            <div class="card_body">
+                <h6 class="card_title">Food Mobile UI</h6>
+                <div class="btns">
+                    <button onclick="Toggle16()" id="btn16" class="btn" ><i class="fa fa-heart"> </i> <span class="black-word">Like</span></button>
+                  <span><i class="fa fa-eye"></i> 132k</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    </div>
+    <script>
+
+        var btnvar1=document.getElementById('btn1');
+        function Toggle1(){
+            if(btnvar1.style.color=="red"){
+                btnvar1.style.color="grey"
+            }
+            else{
+                btnvar1.style.color="red"
+            }
+        }
+        var btnvar2=document.getElementById('btn2');
+        function Toggle2(){
+            if(btnvar2.style.color=="red"){
+                btnvar2.style.color="grey"
+            }
+            else{
+                btnvar2.style.color="red"
+            }
+        }
+        var btnvar3=document.getElementById('btn3');
+        function Toggle3(){
+            if(btnvar3.style.color=="red"){
+                btnvar3.style.color="grey"
+            }
+            else{
+                btnvar3.style.color="red"
+            }
+        }
+        var btnvar4=document.getElementById('btn4');
+        function Toggle4(){
+            if(btnvar4.style.color=="red"){
+                btnvar4.style.color="grey"
+            }
+            else{
+                btnvar4.style.color="red"
+            }
+        }
+        var btnvar5=document.getElementById('btn5');
+        function Toggle5(){
+            if(btnvar5.style.color=="red"){
+                btnvar5.style.color="grey"
+            }
+            else{
+                btnvar5.style.color="red"
+            }
+        }
+        var btnvar6=document.getElementById('btn6');
+        function Toggle6(){
+            if(btnvar6.style.color=="red"){
+                btnvar6.style.color="grey"
+            }
+            else{
+                btnvar6.style.color="red"
+            }
+        }
+        var btnvar7=document.getElementById('btn7');
+        function Toggle7(){
+            if(btnvar7.style.color=="red"){
+                btnvar7.style.color="grey"
+            }
+            else{
+                btnvar7.style.color="red"
+            }
+        }
+        var btnvar8=document.getElementById('btn8');
+        function Toggle8(){
+            if(btnvar8.style.color=="red"){
+                btnvar8.style.color="grey"
+            }
+            else{
+                btnvar8.style.color="red"
+            }
+        }
+        var btnvar9=document.getElementById('btn9');
+        function Toggle9(){
+            if(btnvar9.style.color=="red"){
+                btnvar9.style.color="grey"
+            }
+            else{
+                btnvar9.style.color="red"
+            }
+        }
+        var btnvar10=document.getElementById('btn10');
+        function Toggle10(){
+            if(btnvar10.style.color=="red"){
+                btnvar10.style.color="grey"
+            }
+            else{
+                btnvar10.style.color="red"
+            }
+        }
+        var btnvar11=document.getElementById('btn11');
+        function Toggle11(){
+            if(btnvar11.style.color=="red"){
+                btnvar11.style.color="grey"
+            }
+            else{
+                btnvar11.style.color="red"
+            }
+        }
+        var btnvar12=document.getElementById('btn12');
+        function Toggle12(){
+            if(btnvar12.style.color=="red"){
+                btnvar12.style.color="grey"
+            }
+            else{
+                btnvar12.style.color="red"
+            }
+        }
+        var btnvar13=document.getElementById('btn13');
+        function Toggle13(){
+            if(btnvar13.style.color=="red"){
+                btnvar13.style.color="grey"
+            }
+            else{
+                btnvar13.style.color="red"
+            }
+        }
+        var btnvar14=document.getElementById('btn14');
+        function Toggle14(){
+            if(btnvar14.style.color=="red"){
+                btnvar14.style.color="grey"
+            }
+            else{
+                btnvar14.style.color="red"
+            }
+        }
+        var btnvar15=document.getElementById('btn15');
+        function Toggle15(){
+            if(btnvar15.style.color=="red"){
+                btnvar15.style.color="grey"
+            }
+            else{
+                btnvar15.style.color="red"
+            }
+        }
+        var btnvar16=document.getElementById('btn16');
+        function Toggle16(){
+            if(btnvar16.style.color=="red"){
+                btnvar16.style.color="grey"
+            }
+            else{
+                btnvar16.style.color="red"
+            }
+        }
+        </script>
+        <script>
+    const filterButtons=document.querySelectorAll(".filter_buttons button");
+    
+    const filtercards=document.querySelectorAll(".filtercards .card");
+    const filterCards=e =>{
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    filtercards.forEach(card => {
+        card.classList.add("hidden");
+        if(card.dataset.name===e.target.dataset.name|| e.target.dataset.name==="all"){
+            card.classList.remove("hidden");
+        }
+    });
+};
+filterButtons.forEach(button=>button.addEventListener("click",filterCards));
+
+
+
+
+    </script>
+
+</section>
+<section class="foot">
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+
+
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+
+            <li><a href="#"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+
+
+        </ul>
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#designer">Designers</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#">Jobs</a></li>
+        </ul>
+        <p>@2023 Dribbble All Rights Reserved</p>
+    </footer>
+</section>
+<script src="js/foryou.js"></script>
+
+</body>
+</html>

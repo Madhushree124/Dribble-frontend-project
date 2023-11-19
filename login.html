@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Dribble
+            
+        </title>
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab&family=Urbanist:ital,wght@1,600&display=swap" rel="stylesheet">
+   
+    </head>
+    <body>
+        <header>
+            <nav>
+            <div class="icon"><a href="/index.html">Dribble</a></div>
+           
+           
+            <ol>
+                <li><a href="/index.html">home</a></li>
+                
+                <li><a href="/login.html">Log in/Sign up</a></li>
+              
+            </ol>
+            
+        </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>USER LOGIN</h2>
+                <form action="/index.html">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn" onclick="validation1()"><span></span>Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+                    </div>
+                </form>
+                <script type="text/javascript">
+                    function validation1(){
+                        var email='madhu@gmail.com';
+                        var password='1234';
+
+                        var Email=document.getElementById('email').value;
+                        var Password=document.getElementById('password').value;
+
+                        if((email==Email)&&(password==Password)){
+                            alert('You Loggedin successfully!','success');
+                        }
+                        else if((email!=Email) &&(password==Password)){
+                            alert('Please enter a valid mail id');
+                        }
+                        else if((email==Email )&&(password!=Password)){
+                            alert('Please enter a valid password');
+                        }
+                        else{
+                            alert('Wrong username or password');
+
+                        }
+                    }
+                </script>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                        
+                    </div>
+                    <br>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have a account?<a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+       <script>const wrapper =document.querySelector('.wrapper');
+        const loginLink =document.querySelector('.login-link');
+        const registerLink=document.querySelector('.register-link');
+        registerLink.addEventListener('click',()=>{
+            wrapper.classList.add('active');
+        });
+        loginLink.addEventListener('click',()=>{
+            wrapper.classList.remove('active');
+        });</script>
+        <script src="js/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
